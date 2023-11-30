@@ -72,13 +72,11 @@ checkFlexGap();
 // Smooth scrolling animation
 
 const allLinks = document.querySelectorAll("a.main-nav-link:link");
-console.log(allLinks);
 
 allLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const href = link.getAttribute("href");
-    console.log(href);
 
     // Scroll back to top
     if (href === "#") window.scrollTo({ top: 0, behavior: "smooth" });
